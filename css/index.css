@@ -1,0 +1,141 @@
+/**/
+/*Para recetear configuración por defecto*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Configurar el cuerpo de la pagina*/
+body{
+    /*Para agregar la fuenta de texto 'Open Sans'*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+
+.contenedor{
+    /**/
+    width: 90%;
+    max-width: 1200;
+    /*para todo que se sobresalga del tamaño maximo se oculte*/
+    overflow: hidden;
+    /*margin auto para que centre todo*/
+    margin: auto;
+    /*padin de 60px arriba y abajo y cero a los costados*/
+    padding: 30px 0;
+}
+
+header{
+    height: 100vh ;
+    background-image: linear-gradient(to top, #fad0c454 0%, #ffd1ff48 35%), url(../css/RRT_01.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*lo que se hace es que cubra toda la superficie*/
+    background-size: cover;
+    /*fija la imagen al fondo para cuando se mueva el scroll se mantenga fija*/
+    background-attachment: fixed;
+    
+    
+}
+.cv_rrt{
+    color:white;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+:root{
+scroll-behavior: smooth;
+}
+
+.menu {
+    /*para que siempre este presente aunque hay algun tipo de scrool*/
+position: fixed;
+/*su hubicación*/
+top: 30px;
+right: 30px;
+/*el color de fondo del icono*/
+background-color: white;
+/*tamaño del boton*/
+width: 40px;
+height: 40px;
+border-radius: 10px;
+box-shadow: 0 0 6px rgba(0,0, 0, 0.5);
+}
+
+
+.menu_navegacion{
+    /*para que siempre este presente aunque hay algun tipo de scrool*/
+    position: fixed;
+    /*que se ubique a la derecha y quecomience desde arriba*/
+    top: 0;
+    right: 0;
+    /*que abarque el 20% desde la derecha*/
+    width: 20%;
+    height: 100%;
+    /*color de fondo del menu*/
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0,0, 0, 0.5);
+    /*mecanica para que desaparesca el menu*/
+    transition: .3s ease-in-out;
+    transform: translate(110%);
+    
+}
+
+.spread{                      
+    transform: translate(0);
+}
+
+.menu_navegacion a{
+
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 50px;
+     margin-bottom: 15px;
+  }
+
+.subtitulo{
+text-align: center;
+font-weight: 300;
+color: royalblue;
+margin: 40px;
+font-size: 40px;
+}
+div{
+
+text-align: left;
+font-weight: 300;
+color: royalblue;
+margin: 15px 0;
+font-size: 25px;
+
+}
+  /*Datos personales*/
+  .dato_personal h3{
+display: flex;
+/*justify-content: space-evenly;*/
+align-items: flex-start;
+/*si no cabe en la misma linea que lo pase abajo*/
+flex-wrap: wrap;
+flex-direction: column 2;
+flex-direction: initial;
+margin-left: 15px;
+margin-top: 10px;
+
+  }
+.dato_personal p{
+    margin-left: 15px;   
+}  
+a{
+    text-decoration: none;
+    color:black;
+    
+}
